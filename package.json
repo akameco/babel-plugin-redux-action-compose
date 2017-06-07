@@ -1,0 +1,52 @@
+{
+  "name": "babel-plugin-redux-action-compose",
+  "version": "0.0.0",
+  "description": "compose Action type",
+  "license": "MIT",
+  "repository": "akameco/babel-plugin-redux-action-compose",
+  "author": {
+    "name": "akameco",
+    "email": "akameco.t@gmail.com",
+    "url": "akameco.github.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test:watch": "jest --watch",
+    "test": "jest"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "babel",
+    "plugin",
+    "redux",
+    "action",
+    "type"
+  ],
+  "dependencies": {
+    "babel-explode-module": "^1.4.0",
+    "babel-file-loader": "^1.0.2",
+    "babel-flow-scope": "^1.2.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-template": "^6.25.0",
+    "babel-types": "^6.25.0",
+    "uppercamelcase": "^3.0.0"
+  },
+  "devDependencies": {
+    "ast-pretty-print": "^2.0.0",
+    "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
+    "babel-log": "^2.0.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.5.2",
+    "eslint": "^4.0.0",
+    "eslint-config-precure": "^0.5.1",
+    "flow-bin": "^0.48.0",
+    "jest": "^20.0.4",
+    "prettier": "^1.4.4"
+  }
+}

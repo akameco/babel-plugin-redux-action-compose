@@ -1,0 +1,9 @@
+{
+  "extends": "precure",
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "flowtype/require-parameter-type": 0
+  }
+}

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`already-imported 1`] = `
+"
+// @flow
+import type { Action as Other2Action } from './other2/actions';
+
+export type Action = Other2Action;"
+`;
+
+exports[`base-action 1`] = `""`;
+
+exports[`import-action 1`] = `""`;
+
+exports[`real-world 1`] = `
+"
+// @flow
+import type { Action as Other2Action } from './other2/actions';
+import type { Action as Other3Action } from './other3/actions';
+
+import type { Action as OtherAction } from './other/actions';
+
+export type Action = Other2Action | Other3Action | OtherAction;"
+`;
+
+exports[`remove 1`] = `""`;
