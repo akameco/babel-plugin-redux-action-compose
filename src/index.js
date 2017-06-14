@@ -1,5 +1,5 @@
 // @flow
-import nodePath from 'path'
+import { relative, normalize, dirname, extname } from 'path'
 import * as t from 'babel-types'
 import flowSyntax from 'babel-plugin-syntax-flow'
 import { loadFileSync } from 'babel-file-loader'
@@ -45,8 +45,8 @@ function isActionFile(path: Path): boolean {
 }
 
 function getImportPath(from: string, to: string): string {
-  const relativePath = nodePath.relative(nodePath.dirname(from), to)
-  const fomattedPath = nodePath.extname(relativePath) === '.js'
+  const relativePath = relative(dirname(from), to)
+  const fomattedPath = extname(relativePath) === '.js'
     ? relativePath.replace('.js', '')
     : relativePath
   if (!/^\.\.?/.test(fomattedPath)) {
@@ -56,7 +56,8 @@ function getImportPath(from: string, to: string): string {
 }
 
 function actionName(path: string) {
-  return upperCamelCase(nodePath.normalize(nodePath.dirname(path))) + 'Action'
+  const parentPath = normalize(dirname(path)).split('/')
+  return upperCamelCase(parentPath[parentPath.length - 1]) + 'Action'
 }
 
 export default () => {
