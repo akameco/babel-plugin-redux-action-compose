@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-redux-action-compose",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "compose Action type",
   "license": "MIT",
   "repository": "akameco/babel-plugin-redux-action-compose",
