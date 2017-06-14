@@ -4,22 +4,9 @@ import * as t from 'babel-types'
 import flowSyntax from 'babel-plugin-syntax-flow'
 import { loadFileSync } from 'babel-file-loader'
 import explodeModule from 'babel-explode-module'
+import { addFlowComment } from 'babel-add-flow-comments'
 import upperCamelCase from 'uppercamelcase'
 import type { Path, State } from './types'
-
-function removeFlowComments(
-  comments: Array<{ value: string, ignore: boolean }>
-) {
-  const FLOW_DIRECTIVE = '@flow'
-  for (const comment of comments) {
-    if (comment.value.indexOf(FLOW_DIRECTIVE) >= 0) {
-      comment.value = comment.value.replace(FLOW_DIRECTIVE, '')
-      if (!comment.value.replace(/\*/g, '').trim()) {
-        comment.ignore = true
-      }
-    }
-  }
-}
 
 function hasAction(path: Path) {
   const name = path.get('id').get('name').node
@@ -127,9 +114,6 @@ export default () => {
           }
         }
 
-        // remove @flow
-        removeFlowComments(file.ast.comments)
-
         if (path.node.body.length > 0) {
           // create `export type Action = A | B | C`
           const exploded = explodeModule(path.node)
@@ -167,9 +151,7 @@ export default () => {
           )
 
           // add `// @flow`
-          path.node.body[0].leadingComments = [
-            { type: 'CommentLine', value: ' @flow' },
-          ]
+          addFlowComment(path)
         }
       },
     },

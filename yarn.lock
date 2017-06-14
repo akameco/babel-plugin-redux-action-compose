@@ -171,6 +171,10 @@ aws4@^1.2.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
+babel-add-flow-comments@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/babel-add-flow-comments/-/babel-add-flow-comments-0.2.0.tgz#a1f193033732266d8f620bd6e305029ee06a5025"
+
 babel-code-frame@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.22.0.tgz#027620bee567a88c32561574e7fd0801d33118e4"
@@ -1062,18 +1066,18 @@ escodegen@^1.6.1:
   optionalDependencies:
     source-map "~0.2.0"
 
-eslint-config-precure@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-precure/-/eslint-config-precure-0.5.1.tgz#49c54bdf5b4aa316e080a2ab00ed27c994153260"
+eslint-config-precure@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-precure/-/eslint-config-precure-0.6.0.tgz#6f18fb987d959741c9ea186398b71f8811d581a3"
   dependencies:
     babel-eslint "^7.2.3"
     eslint-config-prettier "^2.1.1"
-    eslint-plugin-flowtype "^2.33.0"
+    eslint-plugin-flowtype "^2.34.0"
     eslint-plugin-import "^2.3.0"
     eslint-plugin-prettier "^2.1.1"
-    eslint-plugin-react "^7.0.1"
+    eslint-plugin-react "^7.1.0"
     eslint-plugin-unicorn "^2.1.1"
-    prettier "^1.3.1"
+    prettier "^1.4.4"
 
 eslint-config-prettier@^2.1.1:
   version "2.1.1"
@@ -1096,7 +1100,7 @@ eslint-module-utils@^2.0.0:
     debug "2.2.0"
     pkg-dir "^1.0.0"
 
-eslint-plugin-flowtype@^2.33.0:
+eslint-plugin-flowtype@^2.34.0:
   version "2.34.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-2.34.0.tgz#b9875f314652e5081623c9d2b18a346bbb759c09"
   dependencies:
@@ -1124,13 +1128,13 @@ eslint-plugin-prettier@^2.1.1:
     fast-diff "^1.1.1"
     jest-docblock "^20.0.1"
 
-eslint-plugin-react@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.0.1.tgz#e78107e1e559c6e2b17786bb67c2e2a010ad0d2f"
+eslint-plugin-react@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.1.0.tgz#27770acf39f5fd49cd0af4083ce58104eb390d4c"
   dependencies:
     doctrine "^2.0.0"
     has "^1.0.1"
-    jsx-ast-utils "^1.3.4"
+    jsx-ast-utils "^1.4.1"
 
 eslint-plugin-unicorn@^2.1.1:
   version "2.1.1"
@@ -2087,7 +2091,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-jsx-ast-utils@^1.3.4:
+jsx-ast-utils@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-1.4.1.tgz#3867213e8dd79bf1e8f2300c0cfc1efb182c0df1"
 
@@ -2466,7 +2470,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.3.1, prettier@^1.4.4:
+prettier@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.4.4.tgz#a8d1447b14c9bf67e6d420dcadd10fb9a4fad65a"
 

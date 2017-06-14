@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`nest snapshot 1`] = `
-"
-// @flow
+"// @flow
 import type { Action as Other2Action } from './other2/actions';
 import type { Action as Other3Action } from './other3/actions';
 
