@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "babel-add-flow-comments": "^0.2.0",
-    "babel-explode-module": "^1.4.0",
+    "babel-explode-module": "^2.0.0",
     "babel-file-loader": "^1.0.2",
     "babel-flow-scope": "^1.2.0",
     "babel-plugin-syntax-flow": "^6.18.0",
@@ -44,12 +44,12 @@
     "babel-jest": "^20.0.3",
     "babel-log": "^2.0.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-preset-env": "^1.5.2",
-    "eslint": "^4.0.0",
-    "eslint-config-precure": "^0.6.0",
-    "flow-bin": "^0.48.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.3.0",
+    "eslint-config-precure": "^0.7.1",
+    "flow-bin": "^0.51.0",
     "jest": "^20.0.4",
     "jest-cli": "^20.0.4",
-    "prettier": "^1.4.4"
+    "prettier": "^1.5.3"
   }
 }
