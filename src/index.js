@@ -3,7 +3,7 @@ import { relative, normalize, dirname, extname } from 'path'
 import * as t from 'babel-types'
 import flowSyntax from 'babel-plugin-syntax-flow'
 import { loadFileSync } from 'babel-file-loader'
-import explodeModule from 'babel-explode-module'
+import { explodeModule } from 'babel-explode-module'
 import { addFlowComment } from 'babel-add-flow-comments'
 import upperCamelCase from 'uppercamelcase'
 import type { Path, State } from './types'
@@ -33,9 +33,10 @@ function isActionFile(path: Path): boolean {
 
 function getImportPath(from: string, to: string): string {
   const relativePath = relative(dirname(from), to)
-  const fomattedPath = extname(relativePath) === '.js'
-    ? relativePath.replace('.js', '')
-    : relativePath
+  const fomattedPath =
+    extname(relativePath) === '.js'
+      ? relativePath.replace('.js', '')
+      : relativePath
   if (!/^\.\.?/.test(fomattedPath)) {
     return `./${fomattedPath}`
   }
