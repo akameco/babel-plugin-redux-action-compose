@@ -53,12 +53,12 @@ export default () => {
     visitor: {
       // eslint-disable-next-line
       Program(path: Path, { file, opts }: State) {
-        if (!opts.inputPath) {
+        if (!opts.input) {
           return false
         }
 
         const { filename: from } = file.opts
-        const to = opts.inputPath
+        const to = opts.input
         const importPath = getImportPath(from, to)
 
         try {

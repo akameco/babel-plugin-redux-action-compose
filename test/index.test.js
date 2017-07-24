@@ -13,7 +13,7 @@ for (const dir of fs.readdirSync(actionPath)) {
     const { code } = transformFileSync(input, {
       babelrc: false,
       plugins: [
-        [plugin, { inputPath: path.join(actionPath, dir, 'other/actions.js') }],
+        [plugin, { input: path.join(actionPath, dir, 'other/actions.js') }],
       ],
     })
     expect(code).toMatchSnapshot(`${dir}`)

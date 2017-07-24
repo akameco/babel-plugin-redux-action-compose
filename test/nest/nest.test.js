@@ -9,7 +9,7 @@ test('nest snapshot', () => {
   const { code } = transformFileSync(input, {
     babelrc: false,
     plugins: [
-      [plugin, { inputPath: path.join(__dirname, 'other/sub/actions.js') }],
+      [plugin, { input: path.join(__dirname, 'other/sub/actions.js') }],
     ],
   })
   expect(code).toMatchSnapshot()
