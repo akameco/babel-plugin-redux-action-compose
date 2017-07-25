@@ -47,7 +47,7 @@ export type Action = Other2Action | OtherAction;
 ```js
 {
   "plugins": [
-    ["redux-action-compose", {inputPath: 'othre/action.js'}]
+    ["redux-action-compose", {input: 'othre/action.js'}]
   ]
 }
 ```
