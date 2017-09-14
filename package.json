@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "ast-pretty-print": "^2.0.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.25.0",
     "babel-jest": "^20.0.3",
     "babel-log": "^2.0.0",
