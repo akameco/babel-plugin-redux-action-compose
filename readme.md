@@ -2,6 +2,8 @@
 
 > compose Action type
 
+**deprecated**  
+You can use [akameco/babel-plugin-s2s-action-root](https://github.com/akameco/babel-plugin-s2s-action-root)
 
 ## Install
 
