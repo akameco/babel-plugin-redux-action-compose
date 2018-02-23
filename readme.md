@@ -1,5 +1,7 @@
 # babel-plugin-redux-action-compose [![Build Status](https://travis-ci.org/akameco/babel-plugin-redux-action-compose.svg?branch=master)](https://travis-ci.org/akameco/babel-plugin-redux-action-compose)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/babel-plugin-redux-action-compose.svg)](https://greenkeeper.io/)
+
 > compose Action type
 
 **deprecated**  
